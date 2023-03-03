@@ -1,0 +1,32 @@
+.login input{
+    font-size: 16px;
+    padding: 5px 1px;
+    outline: none;
+    border: none;
+    margin: 14px 0px;
+    border-bottom: 1px solid #ccc;
+    transition: 280ms ease-in-out;
+}
+
+.login label {
+        font-size: 16px;
+        margin-top: 20px;
+        position: absolute;
+        pointer-events: none;
+        color: rgb(146, 146, 146);
+        transition: 280ms ease-in-out;
+}
+
+.login input:focus {
+    border-bottom: 1px solid rgb(53, 53, 53);
+}
+
+.login input:not([value=""]) ~ label {
+    margin-top: 0px;
+    font-size: 12px;
+}
+
+.login input:focus ~ label {
+    margin-top: 0px;
+    font-size: 12px;
+}
